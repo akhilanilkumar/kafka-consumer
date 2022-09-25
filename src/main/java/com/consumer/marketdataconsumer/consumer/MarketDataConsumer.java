@@ -41,9 +41,9 @@ public class MarketDataConsumer {
             marketData = mapper.readValue(message, MarketData.class);
             marketDataService.persistMarketData(marketData);
         } catch (JsonProcessingException e) {
-            logger.error("Error Occurred While Data Convertion:" + e.getLocalizedMessage());
+            logger.error("Error Occurred While Data Conversion:" + e.getLocalizedMessage());
         }
-        logger.info("Received Message:" + marketData.toString());
+        logger.info("Received Message:" + marketData);
         return marketData;
     }
 }

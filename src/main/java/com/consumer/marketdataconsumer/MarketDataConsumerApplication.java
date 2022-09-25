@@ -11,14 +11,14 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 public class MarketDataConsumerApplication {
 
-	/**
-	 * The entry point of application.
-	 *
-	 * @param args the input arguments
-	 */
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
-		SpringApplication.run(MarketDataConsumerApplication.class, args);
-	}
+        SpringApplication.run(MarketDataConsumerApplication.class, args);
+    }
 
 }
