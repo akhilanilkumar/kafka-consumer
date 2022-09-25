@@ -22,7 +22,7 @@ public class HazelcastConfiguration {
                 .setInstanceName("hazelcast-instance")
                 .addMapConfig(
                         new MapConfig()
-                                .setName("marketdata")
+                                .setName("sb-topic")
                                 .setTimeToLiveSeconds(20));
     }
 }
